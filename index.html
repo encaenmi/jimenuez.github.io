@@ -7,61 +7,231 @@
         <meta name="viewport" content="initial-scale=1, width=device-width">
         
         <!-- http://getbootstrap.com/docs/4.5/ -->
+        <!--
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        -->
 
         <!--own css for github-->
-        <link href="jimenuez.github.io/styles.css" rel="stylesheet">
+        <!--<link href="jimenuez.github.io/styles.css" rel="stylesheet">-->
         <!--own css for local dev-->
         <link href="styles.css" rel="stylesheet">
 
+        
         <!-- http://getbootstrap.com/docs/4.5/ -->
+        <!--
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        -->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
 
         <title>Jimenuez</title>
     </head>
 
     <body>
 
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Nav</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!--navbar-->
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">FINANOVA</a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto mt-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#1">Uno</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#2">Dos</a>
-                    </li>
-                </ul>
-            </div> 
+            <ul class="nav-ul">
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#regulatorio">Información de autoridades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
         </nav>
 
-        <div class="container-fluid">
-            <!--main header-->
-            <div class="row">
-                <div class="col-12">
-                    <h1>Jimenuez</h1>
+        <div class="container-main">
+            <!--title block-->
+            <div class="container-background">
+                <div class="container-main-title">
+                    <h1>FINANOVA</h1>
                 </div>
             </div>
 
-            <!--section 1-->
-            <div class="row">
-                <div class="col-12" id="1">
-                    <h2>Section 1</h2>
+            <!--nosotros-->
+            <div class="container-nosotros" id="nosotros">
+                <div class="container-nosotros-left">
+                    <h2>NOSOTROS</h2>
+                    <p>Somos una empresa dedicada al financiamiento de actividades agrícolas en el Estado de Chihuahua.</p>
+                </div>
+
+                <div class="container-nosotros-right">
+                    <div id="mision">
+                        <h3>MISIÓN</h3>
+                        <p>Ser una SOFOM E.N.R. reconocida por sus acreditados como la mejor opción en el mercado, proveer los mejores productos de crédito, así como promover nuestro crecimiento con base en decisiones correctas al hacer negocios que a su vez apoyen el desarrollo y rentabilidad de nuestra empresa.</p>
+                    </div>
+                    <div id="vision">
+                        <h3>VISIÓN</h3>
+                        <p>Convertirnos en la empresa líder en las localidades de influencia, mediante el correcto otorgamiento de productos financieros que contribuyan al crecimiento económico de nuestros clientes.</p>
+
+                    </div>
+                    <div id="valores">
+                        <h3>VALORES</h3>
+                        <ol>
+                            <li>Respeto</li>
+                            <li>Calidad</li>
+                            <li>Responsabilidad</li>
+                            <li>Confianza</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Proactividad</li>
+                        </ol>
+
+                    </div>
                 </div>
             </div>
 
-            <!--section 2-->
-            <div class="row">
-                <div class="col-12" id="2">
-                    <h2>Section 2</h2>
+            <!--productos-->
+            <div class="container-productos" id="productos">
+                <div class="header-productos">
+                    <h2>NUESTROS PRODUCTOS</h2>
+                </div>
+                <div class="container-productos-cards">
+                    <div class="product" id="1">
+                        <h4>Cuenta corriente</h4>
+                        <p>Líneas de financiamiento de corto plazo enfocadas a cubrir necesidades inmediatas por un corto periodo de tiempo de hasta 120 días, sin destino específico.</p>
+                        <div class="product-features" id="1">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="product" id="2">
+                        <h4>Habilitación o avío</h4>
+                        <p>Líneas de financiamiento de corto plazo enfocadas a cubrir necesidades inmediatas por un corto periodo de tiempo de hasta 120 días, sin destino específico.</p>
+                        <div class="product-features" id="1">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="product" id="3">
+                        <h4>Refraccionario</h4>
+                        <p>Líneas de financiamiento de corto plazo enfocadas a cubrir necesidades inmediatas por un corto periodo de tiempo de hasta 120 días, sin destino específico.</p>
+                        <div class="product-features" id="1">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="product" id="4">
+                        <h4>Simple</h4>
+                        <p>Líneas de financiamiento de corto plazo enfocadas a cubrir necesidades inmediatas por un corto periodo de tiempo de hasta 120 días, sin destino específico.</p>
+                        <div class="product-features" id="1">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="product" id="5">
+                        <h4>Arrendamiento financiero</h4>
+                        <p>Líneas de financiamiento de corto plazo enfocadas a cubrir necesidades inmediatas por un corto periodo de tiempo de hasta 120 días, sin destino específico.</p>
+                        <div class="product-features" id="1">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="product" id="6">
+                        <h4>Quirografario</h4>
+                        <p>Líneas de financiamiento de corto plazo enfocadas a cubrir necesidades inmediatas por un corto periodo de tiempo de hasta 120 días, sin destino específico.</p>
+                        <div class="product-features" id="1">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!--regulatorio-->
+            <div class="container-info" id="regulatorio">
+                <div class="container-info-left">
+                    <h3>INFORMACIÓN DE AUTORIDADES</h3>
+                    <p>Sociedad anónima promotora de inversión de capital variable sociedad financiera de objeto multiple, entidad no regulada.</p>
+                </div>
+                <div class="container-info-right">
+                    <div id="une">
+                        <h4>TITULAR DE LA UNE Y ENCARGADO REGIONAL</h4>
+                        <table style="width:75%">
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Nancy Gallegos Levario</td>
+                            </tr>
+                            <tr>
+                                <td>Correo electrónico:</td>
+                                <td>nancygallegos@gfinanova.com</td>
+                            </tr>
+                            <tr>
+                                <td>Teléfono:</td>
+                                <td>(614) 389 56 40</td>
+                            </tr>
+                            <tr>
+                                <td>Dirección:</td>
+                                <td>Vía Lombardía Núm Ext. 3000 Núm. Int. 402 Col. Saucito, C.P. 31110 Chihuahua, Chihuahua</td>
+                            </tr>
+                            <tr>
+                                <td>Horario de atención:</td>
+                                <td>9:00 A.M. a 15:00 P.M. de Lunes a Viernes</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <div id="condusef">
+                        <h4>CONDUSEF</h4>
+                        <table style="width:75%">
+                            <tr>
+                                <td>Dirección:</td>
+                                <td>Insurgentes Sur 762, Del Valle, Ciudad de México. C.P. 03100</td>
+                            </tr>
+                            <tr>
+                                <td>Correo electrónico:</td>
+                                <td>asesoria@condusef.gob.mx</td>
+                            </tr>
+                            <tr>
+                                <td>Teléfonos:</td>
+                                <td>(55) 5340 0999 y 01 (800) 999 8080</td>
+                            </tr>
+                            <tr>
+                                <td>Atención a la ciudadanía:</td>
+                                <td>Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros</td>
+                            </tr>
+                        </table>
+                        <p>En caso de alguna consulta, reclamación o aclaración, podrá presentarla en la UNE de Atención a Usuarios, la que dará repuesta en un plazo no mayor a 30 días hábiles.</p>
+                    </div>
+                    <div id="buro">
+                        <h4>BURÓ DE ENTIDADES FINANCIERAS</h4>
+                        <p>Para conocer la información de todo el sector, favor de acceder al sitio http://www.buro.gob.mx/</p>
+                        <p>CONDUSEF- SIPRES: https://webapps.condusef.gob.mx/SIPRES/jsp/pub/index.jsp</p>
+                        <p>Aviso importante: Finanova no cuenta con productos preautorizados ni hace cobros de comisiones antes de la disposición del crédito.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--footer-->
+            <div class="container-footer" id="contacto">
+                <div class="container-footer-logo">
+                    <h1>FINANOVA</h1>
+                    <p>Grupo Finanova. Todos los derechos reservados 2018.</p>
+                </div>
+                <div class="container-footer-contacto">
+                    <h4>CONTACTO</h4>
+                    <table style="width:75%">
+                        <tr>
+                            <td>Correo electrónico:</td>
+                            <td>victormenchaca@gfinanova.com</td>
+                        </tr>
+                        <tr>
+                            <td>Teléfono:</td>
+                            <td>(614) 389 56 40</td>
+                        </tr>
+                        <tr>
+                            <td>Dirección:</td>
+                            <td>Paseos vistas del sol #6801 INT. 104 Col. Vistas del sol, C.P. 31206</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
         </div>
 
     </body>
