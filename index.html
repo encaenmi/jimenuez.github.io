@@ -43,7 +43,7 @@
                     <a class="nav-link" href="#productos">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#regulatorio">Información de autoridades</a>
+                    <a class="nav-link" href="#info">Información de autoridades</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contacto</a>
@@ -52,6 +52,7 @@
         </nav>
 
         <div class="container-main">
+            
             <!--title block-->
             <div class="container-background">
                 <div class="container-main-title">
@@ -69,16 +70,19 @@
                 <div class="container-nosotros-right">
                     <div id="mision">
                         <h3>MISIÓN</h3>
+                        <hr style="color:white;background-color:white;width:75%;text-align:left;margin-left:0" noshade>
                         <p>Ser una SOFOM E.N.R. reconocida por sus acreditados como la mejor opción en el mercado, proveer los mejores productos de crédito, así como promover nuestro crecimiento con base en decisiones correctas al hacer negocios que a su vez apoyen el desarrollo y rentabilidad de nuestra empresa.</p>
                     </div>
                     <div id="vision">
                         <h3>VISIÓN</h3>
+                        <hr style="color:white;background-color:white;width:75%;text-align:left;margin-left:0" noshade>
                         <p>Convertirnos en la empresa líder en las localidades de influencia, mediante el correcto otorgamiento de productos financieros que contribuyan al crecimiento económico de nuestros clientes.</p>
 
                     </div>
                     <div id="valores">
                         <h3>VALORES</h3>
-                        <ol>
+                        <hr style="color:white;background-color:white;width:75%;text-align:left;margin-left:0" noshade>
+                        <ol class="valores-list">
                             <li>Respeto</li>
                             <li>Calidad</li>
                             <li>Responsabilidad</li>
@@ -143,17 +147,19 @@
             </div>
 
             <!--regulatorio-->
-            <div class="container-info" id="regulatorio">
+            <div class="container-info" id="info">
                 <div class="container-info-left">
-                    <h3>INFORMACIÓN DE AUTORIDADES</h3>
+                    <h2>INFORMACIÓN DE AUTORIDADES</h2>
                     <p>Sociedad anónima promotora de inversión de capital variable sociedad financiera de objeto multiple, entidad no regulada.</p>
                 </div>
+
                 <div class="container-info-right">
                     <div id="une">
                         <h4>TITULAR DE LA UNE Y ENCARGADO REGIONAL</h4>
+                        <hr style="color:darkgrey;background-color:darkgrey;width:75%;text-align:left;margin-left:0" noshade>
                         <table style="width:75%">
                             <tr>
-                                <td>Nombre</td>
+                                <td>Nombre:</td>
                                 <td>Nancy Gallegos Levario</td>
                             </tr>
                             <tr>
@@ -166,17 +172,18 @@
                             </tr>
                             <tr>
                                 <td>Dirección:</td>
-                                <td>Vía Lombardía Núm Ext. 3000 Núm. Int. 402 Col. Saucito, C.P. 31110 Chihuahua, Chihuahua</td>
+                                <td>Vía Lombardía 3000, piso 4 oficina 402 Col. Saucito, C.P. 31110 Chihuahua, Chihuahua</td>
                             </tr>
                             <tr>
                                 <td>Horario de atención:</td>
-                                <td>9:00 A.M. a 15:00 P.M. de Lunes a Viernes</td>
+                                <td>9:00 a 15:00 de lunes a viernes</td>
                             </tr>
                         </table>
                         
                     </div>
                     <div id="condusef">
                         <h4>CONDUSEF</h4>
+                        <hr style="color:darkgrey;background-color:darkgrey;width:75%;text-align:left;margin-left:0" noshade>
                         <table style="width:75%">
                             <tr>
                                 <td>Dirección:</td>
@@ -199,36 +206,49 @@
                     </div>
                     <div id="buro">
                         <h4>BURÓ DE ENTIDADES FINANCIERAS</h4>
-                        <p>Para conocer la información de todo el sector, favor de acceder al sitio http://www.buro.gob.mx/</p>
-                        <p>CONDUSEF- SIPRES: https://webapps.condusef.gob.mx/SIPRES/jsp/pub/index.jsp</p>
-                        <p>Aviso importante: Finanova no cuenta con productos preautorizados ni hace cobros de comisiones antes de la disposición del crédito.</p>
+                        <hr style="color:darkgrey;background-color:darkgrey;width:75%;text-align:left;margin-left:0" noshade>
+                        <p>Para conocer la información de todo el sector, favor de acceder a los siguientes sitios:</p>
+                        <p>IMAGES</p>
+                        <p class="aviso-importante">AVISO IMPORTANTE: FINANOVA NO CUENTA CON PRODUCTOS PREAUTORIZADOS NI HACE COBROS DE COMISIONES ANTES DE LA DISPOSICIÓN DEL CRÉDITO.</p>
                     </div>
 
                 </div>
             </div>
 
+            <!--contacto-->
+            <div class="container-contacto" id="contacto">
+                <div class="container-contacto-left">
+                    <h2>CONTACTO</h2>
+                    <p><b>Correo electrónico:</b></p>
+                    <p>victormenchaca@gfinanova.com</p>
+                    <p><b>Teléfono:</b></p>
+                    <p>(614) 389 56 40</p>
+                    <p><b>Dirección:</b></p>
+                    <p>Paseos vistas del sol #6801 INT. 104 Col. Vistas del sol, C.P. 31206</p>
+                </div>
+
+                <div class="container-contacto-right">
+                    <div class="contact-form">
+                        <form id="c-form">
+                            <input type="text" value="Nombre" id="fname"><br>
+                            <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
+                            <input type="text" value="Email" id="femail"><br>
+                            <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
+                            <input type="text" value="Título" id="fsubject"><br>
+                            <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
+                            <textarea placeholder="Mensaje" id="fmessage"></textarea>
+                            <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
+                        </form>
+                        <button type="submit" form="c-form" value="Enviar">Submit</button>
+                    </div>
+                </div>
+            </div>
+
             <!--footer-->
-            <div class="container-footer" id="contacto">
+            <div class="container-footer" id="footer">
                 <div class="container-footer-logo">
                     <h1>FINANOVA</h1>
                     <p>Grupo Finanova. Todos los derechos reservados 2018.</p>
-                </div>
-                <div class="container-footer-contacto">
-                    <h4>CONTACTO</h4>
-                    <table style="width:75%">
-                        <tr>
-                            <td>Correo electrónico:</td>
-                            <td>victormenchaca@gfinanova.com</td>
-                        </tr>
-                        <tr>
-                            <td>Teléfono:</td>
-                            <td>(614) 389 56 40</td>
-                        </tr>
-                        <tr>
-                            <td>Dirección:</td>
-                            <td>Paseos vistas del sol #6801 INT. 104 Col. Vistas del sol, C.P. 31206</td>
-                        </tr>
-                    </table>
                 </div>
             </div>
 
