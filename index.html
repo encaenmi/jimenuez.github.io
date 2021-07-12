@@ -33,7 +33,7 @@
 
         <!--navbar-->
         <nav class="navbar">
-            <a class="navbar-brand" href="#">FINANOVA</a>
+            <a class="navbar-brand" href="#"><img src="files/logo-azul.png" width="185" height="22" alt="FINANOVA"></a>
 
             <ul class="nav-ul">
                 <li class="nav-item">
@@ -46,7 +46,7 @@
                     <a class="nav-link" href="#info">Información de autoridades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <button type="button" class="nav-contacto"><a class="nav-link" href="#contacto" id="b-contacto">Contacto</a></button>
                 </li>
             </ul>
         </nav>
@@ -54,11 +54,21 @@
         <div class="container-main">
             
             <!--title block-->
-            <div class="container-background">
-                <div class="container-main-title">
-                    <h1>FINANOVA</h1>
+            <div class="container-slideshow">
+
+                <!--images for slideshow-->
+
+                <div class="mySlides fade">
+                    <img src="files/nogales.jpg" style="width:100%" width="100%">
                 </div>
+
+                <div class="mySlides fade">
+                    <img src="files/invernadero.jpg" style="width:100%" width="100%">
+                </div>
+
             </div>
+
+            <img src="files/logo-blanco.png" alt="Logo Finanova" class="responsive-logo">
 
             <!--nosotros-->
             <div class="container-nosotros" id="nosotros">
@@ -208,7 +218,8 @@
                         <h4>BURÓ DE ENTIDADES FINANCIERAS</h4>
                         <hr style="color:darkgrey;background-color:darkgrey;width:75%;text-align:left;margin-left:0" noshade>
                         <p>Para conocer la información de todo el sector, favor de acceder a los siguientes sitios:</p>
-                        <p>IMAGES</p>
+                        <a href="https://www.buro.gob.mx/" target="_blank"><img src="files/logo-buro.png" alt="Logo Buró" width="80" height="80"></a>
+                        <a href="https://webapps.condusef.gob.mx/SIPRES/jsp/pub/index.jsp" target="_blank"><img src="files/logo-condusef.png" alt="Logo CONDUSEF" width="126" height="70"></a>
                         <p class="aviso-importante">AVISO IMPORTANTE: FINANOVA NO CUENTA CON PRODUCTOS PREAUTORIZADOS NI HACE COBROS DE COMISIONES ANTES DE LA DISPOSICIÓN DEL CRÉDITO.</p>
                     </div>
 
@@ -219,6 +230,7 @@
             <div class="container-contacto" id="contacto">
                 <div class="container-contacto-left">
                     <h2>CONTACTO</h2>
+                    <br>
                     <p><b>Correo electrónico:</b></p>
                     <p>victormenchaca@gfinanova.com</p>
                     <p><b>Teléfono:</b></p>
@@ -239,7 +251,9 @@
                             <textarea placeholder="Mensaje" id="fmessage"></textarea>
                             <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
                         </form>
-                        <button type="submit" form="c-form" value="Enviar">Submit</button>
+                        <div class="container-form-button">
+                            <button type="submit" form="c-form" value="Submit">ENVIAR</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -247,12 +261,32 @@
             <!--footer-->
             <div class="container-footer" id="footer">
                 <div class="container-footer-logo">
-                    <h1>FINANOVA</h1>
+                    <img src="files/logo-blanco.png" alt="FINANOVA" width="284" height="34">
+                    <h3>Aviso de privacidad</h3>
                     <p>Grupo Finanova. Todos los derechos reservados 2018.</p>
                 </div>
             </div>
 
         </div>
+
+    
+        <!--slideshow JS-->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var slides = document.getElementsByClassName("mySlides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1};
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 10000);
+
+            };
+        </script>
 
     </body>
 
