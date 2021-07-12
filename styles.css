@@ -256,6 +256,7 @@ color: var(--unnamed-color-6d6d6d);
 .header-productos {
     text-align: left;
     color: var(--light-blue);
+    margin-left: 25px;
 }
 
 .container-productos-cards {
@@ -281,6 +282,19 @@ color: var(--unnamed-color-6d6d6d);
 .product p {
     font-family: var(--open-sans);
     font-size: 14px;
+}
+
+.product-features p {
+    columns: 2;
+}
+
+.color-line {
+    height: 10px;
+    margin: -10px;
+}
+
+.gray-text {
+    color: #A7A7A7;
 }
 
 /* INFO */
@@ -450,6 +464,11 @@ color: var(--unnamed-color-6d6d6d);
     padding-left: 94px;
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+#aviso-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 
