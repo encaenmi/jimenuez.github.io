@@ -1,0 +1,14 @@
+<?php
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+$recipient = "encaenmi@gmail.com";
+$mailheader = "From: $email \r\n";
+
+mail($recipient, $subject, $message, $mailheader) or die("ERROR!");
+echo "¡Gracias!";
+
+?>

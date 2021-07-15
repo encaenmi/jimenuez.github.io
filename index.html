@@ -601,14 +601,14 @@
 
                 <div class="container-contacto-right">
                     <div class="contact-form">
-                        <form id="c-form">
-                            <input type="text" value="Nombre" id="fname"><br>
+                        <form action="contactform.php" method="POST" id="c-form">
+                            <input type="text" value="Nombre" name="name" id="fname"><br>
                             <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
-                            <input type="text" value="Email" id="femail"><br>
+                            <input type="text" value="Email" name="email" id="femail"><br>
                             <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
-                            <input type="text" value="Título" id="fsubject"><br>
+                            <input type="text" value="Título" name="subject " id="fsubject"><br>
                             <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
-                            <textarea placeholder="Mensaje" id="fmessage"></textarea>
+                            <textarea placeholder="Mensaje" name="message" id="fmessage"></textarea>
                             <hr style="color:white;background-color:white;width:75%;text-align:center;" noshade>
                         </form>
                         <div class="container-form-button">
