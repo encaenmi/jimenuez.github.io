@@ -35,7 +35,11 @@
         <nav class="navbar">
             <a class="navbar-brand" href="#"><img src="files/logo-azul.png" width="185" height="22" alt="FINANOVA"></a>
 
-            <ul class="nav-ul">
+            <!--HAMBURGER TEST-->
+            <label for="hamburger">&#43;</label>
+            <input type="checkbox" id ="hamburger"/>
+
+            <ul class="nav-ul" id="navitems">
                 <li class="nav-item">
                     <a class="nav-link" href="#nosotros">Nosotros</a>
                 </li>
@@ -45,10 +49,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#info">Información de autoridades</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="contact-button">
                     <button type="button" class="nav-contacto"><a class="nav-link" href="#contacto" id="b-contacto">Contacto</a></button>
                 </li>
+                <li class="nav-item" id="contact-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
             </ul>
+
         </nav>
 
         <div class="container-main">
@@ -520,11 +528,11 @@
 
             <!--comisiones-->
             <div class="container-productos" id="comisiones">
-                <div class="header-productos">
+                <div class="header-productos" id="header-comisiones">
                     <h2>COMISIONES</h2>
                 </div>
                 <div class="container-productos-cards">
-                    <div class="product" id="1">
+                    <div class="comision" id="1">
                         <div class="color-line" style="background-color:#4568F5;"></div>
                         <h4>Cuenta corriente</h4>
                         <hr style="color:lightgray;width:100%;text-align:center;" noshade>
@@ -562,7 +570,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="product" id="2">
+                    <div class="comision" id="2">
                         <div class="color-line" style="background-color:#D9E38C;"></div>
                         <h4>Habilitación o avío</h4>
                         <hr style="color:lightgray;width:100%;text-align:center;" noshade>
@@ -600,7 +608,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="product" id="3">
+                    <div class="comision" id="3">
                         <div class="color-line" style="background-color:#E0953E;"></div>
                         <h4>Refraccionario</h4>
                         <hr style="color:lightgray;width:100%;text-align:center;" noshade>
@@ -624,7 +632,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="product" id="4">
+                    <div class="comision" id="4">
                         <div class="color-line" style="background-color:#AC27ED;"></div>
                         <h4>Arrendamiento financiero</h4>
                         <hr style="color:lightgray;width:100%;text-align:center;" noshade>
@@ -648,7 +656,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="product" id="5">
+                    <div class="comision" id="5">
                         <div class="color-line" style="background-color:#14AA3C;"></div>
                         <h4>Simple</h4>
                         <hr style="color:lightgray;width:100%;text-align:center;" noshade>

@@ -27,7 +27,7 @@ h4 {
     position: fixed;
     top: 0;
     min-height: 75px;
-    padding: 5px 20px; /*unsure if necessary*/
+    padding: 5px 20px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -56,7 +56,6 @@ h4 {
     color: var(--strong-blue);
 }
 
-
 .nav-contacto {
     background-color: var(--strong-blue);
     font-size: inherit;
@@ -74,6 +73,59 @@ h4 {
 #b-contacto {
     color: var(--light-blue);
 }
+
+#contact-item {display: none;}
+
+/* hide hamburger on desktop */
+.navbar label, #hamburger { display: none;}
+
+/* show hamburger on mobile */
+@media screen and (max-width: 768px) {
+    /* my own bit */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+
+    .navbar input {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+    
+    /* break into vertical menu */
+    #navitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid var(--medium-gray);
+        padding: 10px;
+    }
+
+    /* show hamb */
+    .navbar label {
+        display: inline-block;
+        color: var(--medium-gray);
+        font-style: normal;
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    /* toggle show/hide menu */
+    #navitems { display: none; }
+    .navbar input:checked ~ #navitems, #contact-item { display: block; }
+
+    /* toggle contact button */ 
+    #contact-button { display: none; }
+}
+
 
 .container-main {
     text-align: center;
@@ -183,6 +235,34 @@ h4 {
     margin: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .container-nosotros {
+        flex-direction: column;
+    }
+
+    .container-nosotros-left {
+        width: 100%;
+    }
+
+    #nosotros {
+        padding: 25px;
+    } 
+
+    #mision p, #vision p, #valores p {
+        letter-spacing: -0.08px;
+        font-size: 12px;
+        line-height: 22px;
+        margin: 3%;
+    }
+
+    #valores ol {
+        margin: 3%;
+        font-size: 12px;
+    }
+
+    
+}
+
 /* PRODUCTOS */
 
 .container-productos {
@@ -228,6 +308,31 @@ h4 {
 
 .gray-text {
     color: #A7A7A7;
+}
+
+/* COMISIONES */
+
+#comisiones {
+    background-color: var(--light-blue);
+}
+
+#header-comisiones {
+    color: var(--dark-blue)
+}
+
+.comision {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    max-width: 25vw;
+    background-color: var(--light-bg);
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--light-blue);
+    box-shadow: 0px 1px 1px 1px var(--medium-gray);
 }
 
 /* INFO */
