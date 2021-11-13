@@ -310,6 +310,25 @@ h4 {
     color: #A7A7A7;
 }
 
+@media screen and (max-width: 768px) {
+    .container-productos {
+        flex-direction: column;
+    }
+
+    #productos {
+        padding: 25px;
+    } 
+
+    #productos p {
+        letter-spacing: -0.08px;
+        font-size: 12px;
+        line-height: 22px;
+        margin: 3%;
+    }
+   
+}
+
+
 /* COMISIONES */
 
 #comisiones {
@@ -333,6 +352,24 @@ h4 {
     border-radius: 5px;
     border-color: var(--light-blue);
     box-shadow: 0px 1px 1px 1px var(--medium-gray);
+}
+
+@media screen and (max-width: 768px) {
+    .container-productos {
+        flex-direction: column;
+    }
+
+    #comisiones {
+        padding: 25px;
+    } 
+
+    #comisiones p {
+        letter-spacing: -0.08px;
+        font-size: 12px;
+        line-height: 22px;
+        margin: 3%;
+    }
+   
 }
 
 /* INFO */
@@ -376,6 +413,28 @@ h4 {
 
 .container-info-right {
     text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .container-info {
+        flex-direction: column;
+    }
+
+    .container-info-left {
+        width: 100%;
+    }
+
+    #info {
+        padding: 25px;
+    } 
+
+    #une p, td, #condusef p, #buro p {
+        letter-spacing: -0.08px;
+        font-size: 12px;
+        line-height: 22px;
+        margin: 3%;
+    }
+   
 }
 
 /* CONTACTO */
@@ -464,6 +523,29 @@ h4 {
     padding-top: 118px;
     padding-left: 94px;
 }
+
+@media screen and (max-width: 768px) {
+    .container-contacto {
+        flex-direction: column;
+    }
+
+    .container-contacto-left {
+        width: 100%;
+    }
+
+    #contacto {
+        padding: 25px;
+    } 
+
+    .container-contacto-right p {
+        letter-spacing: -0.08px;
+        font-size: 12px;
+        line-height: 22px;
+        margin: 3%;
+    }
+   
+}
+
 
 /* FOOTER */
 
