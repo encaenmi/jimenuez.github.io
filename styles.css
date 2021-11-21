@@ -246,7 +246,11 @@ h4 {
 
     #nosotros {
         padding: 25px;
-    } 
+    }
+
+    #nosotros p {
+        width: 100%;
+    }
 
     #mision p, #vision p, #valores p {
         letter-spacing: -0.08px;
@@ -258,6 +262,8 @@ h4 {
     #valores ol {
         margin: 3%;
         font-size: 12px;
+        padding: 3%;
+        max-width: 50%;
     }
 
     
@@ -310,8 +316,14 @@ h4 {
     color: #A7A7A7;
 }
 
+.leer-mas { display: none; }
+
+#product-1 {display: block; }
+
+
 @media screen and (max-width: 768px) {
     .container-productos {
+        display: flex;
         flex-direction: column;
     }
 
@@ -319,12 +331,41 @@ h4 {
         padding: 25px;
     } 
 
+    .header-productos {
+        width: 100%;
+        padding: 5px;
+        margin-left: 0;
+    }
+
     #productos p {
         letter-spacing: -0.08px;
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 10px;
+        line-height: 18px;
         margin: 3%;
+        width: 90%;
     }
+
+    #productos h4 {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .product {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .product a {
+        color: #6d6d6d;
+        font-size: 12px;
+        text-decoration: underline;
+        font-family: var(--open-sans);
+        margin: 5px;        
+    }
+
+    .leer-mas { display: block; }
+
+    #product-1 { display: none; }
    
 }
 
