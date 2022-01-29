@@ -316,10 +316,7 @@ h4 {
     color: #A7A7A7;
 }
 
-.leer-mas { display: none; }
-
-#product-1 {display: block; }
-
+#product-1 { display: none; }
 
 @media screen and (max-width: 768px) {
     .container-productos {
@@ -362,56 +359,9 @@ h4 {
         font-family: var(--open-sans);
         margin: 5px;        
     }
-
-    .leer-mas { display: block; }
-
-    #product-1 { display: none; }
    
 }
 
-
-/* COMISIONES */
-
-#comisiones {
-    background-color: var(--light-blue);
-}
-
-#header-comisiones {
-    color: var(--dark-blue)
-}
-
-.comision {
-    display: flex;
-    flex-flow: column wrap;
-    text-align: left;
-    max-width: 25vw;
-    background-color: var(--light-bg);
-    margin: 10px;
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: var(--light-blue);
-    box-shadow: 0px 1px 1px 1px var(--medium-gray);
-}
-
-@media screen and (max-width: 768px) {
-    .container-productos {
-        flex-direction: column;
-    }
-
-    #comisiones {
-        padding: 25px;
-    } 
-
-    #comisiones p {
-        letter-spacing: -0.08px;
-        font-size: 12px;
-        line-height: 22px;
-        margin: 3%;
-    }
-   
-}
 
 /* INFO */
 
