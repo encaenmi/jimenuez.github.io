@@ -313,6 +313,10 @@ h4 {
     font-size: 18px;
 }
 
+.product a {
+    text-decoration: underline;
+}
+
 .product-features p {
     columns: 2;
 }
@@ -326,7 +330,7 @@ h4 {
     color: #A7A7A7;
 }
 
-#product-1, #product-2, #product-3 { display: none; }
+#product-1, #product-2, #product-3, #product-4, #product-5, #product-6 { display: none; }
 
 @media screen and (max-width: 768px) {
     .container-productos {
