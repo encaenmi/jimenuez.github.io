@@ -36,8 +36,8 @@
             <a class="navbar-brand" href="#"><img src="files/logo-azul.png" width="185" height="22" alt="FINANOVA"></a>
 
             <!--HAMBURGER TEST-->
-            <label for="hamburger">&#43;</label>
-            <input type="checkbox" id ="hamburger"/>
+            <label for="hamburger" id="hamburger-label">&#43;</label>
+            <input type="checkbox" id="hamburger"/>
 
             <ul class="nav-ul" id="navitems">
                 <li class="nav-item">
@@ -68,11 +68,11 @@
                     <!--images for slideshow-->
 
                     <div class="mySlides fade">
-                        <img src="files/nogales.jpg" style="width:100%" width="100%">
+                        <img src="files/nogales.jpg">
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="files/invernadero.jpg" style="width:100%" width="100%">
+                        <img src="files/invernadero.jpg">
                     </div>
 
                 </div>
@@ -727,7 +727,7 @@
                 <div class="container-contacto-right">
                     <div class="contact-form">
                         <form id="c-form"
-                        action="mailto:encaenmi@gmail.com"
+                        action="mailto:victormenchaca@gfinanova.com"
                         method="POST"
                         enctype="multipart/form-data"
                         name="EmailForm">
@@ -775,7 +775,8 @@
                 setTimeout(showSlides, 10000);
 
             };
-
+        </script>
+        <script>
             function hideToggle(elementId) {
                 var x = document.getElementById(elementId);
                 if (x.style.display === "none") {
@@ -784,7 +785,6 @@
                     x.style.display = "none";
                 }
             }
-
         </script>
 
     </body>
