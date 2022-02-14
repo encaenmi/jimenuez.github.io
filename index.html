@@ -33,7 +33,7 @@
 
         <!--navbar-->
         <nav class="navbar">
-            <a class="navbar-brand" href="#"><img src="files/logo-azul.png" width="185" height="22" alt="FINANOVA"></a>
+            <a class="navbar-brand" href="#"><img src="files/logo-azul-xl.png" width="175" alt="FINANOVA"></a>
 
             <!--HAMBURGER TEST-->
             <label for="hamburger" id="hamburger-label">&#43;</label>
@@ -68,16 +68,24 @@
                     <!--images for slideshow-->
 
                     <div class="mySlides fade">
-                        <img src="files/nogales.jpg">
+                        <picture>
+                            <source srcset="files/nogales-landscape.png" media="(min-width: 768px)">
+                            <source srcset="files/nogales-portrait.png" media="(max-width: 768px)">
+                            <img src="files/nogales-landscape.png" alt="nogales">
+                        </picture>
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="files/invernadero.jpg">
+                        <picture>
+                            <source srcset="files/invernadero-landscape.png" media="(min-width: 768px)">
+                            <source srcset="files/invernadero-portrait.png" media="(max-width: 768px)">
+                            <img src="files/invernadero-landscape.png" alt="invernadero">
+                        </picture>
                     </div>
 
                 </div>
 
-                <img src="files/logo-blanco.png" alt="Logo Finanova" class="responsive-logo">
+                <img src="files/logo-blanco-xl.png" alt="Logo Finanova" class="responsive-logo">
             </div>
 
             <!--nosotros-->
