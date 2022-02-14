@@ -41,7 +41,7 @@ h4 {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; /*probably have to change this in a bit*/
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -87,6 +87,7 @@ h4 {
         display: flex;
         flex-direction: column;
         width: 100%;
+        min-height: 25px;
     }
 
     .navbar-brand {
@@ -133,43 +134,52 @@ h4 {
 }
 
 .container-main {
-    text-align: center;
     display: flex;
     flex-direction: column;
     font-family: var(--work-sans);
-    width: 100%;
+    width: 100vw;
+    margin: -10px;
+    padding: 0px;
 }
 
 /* SLIDESHOW */
 /* body-> container-main -> container-title -> container-slideshow -> mySlides fade */
-/*equivalent to hero in tutorial*/
 .container-title {
     display: grid;
-    height: 750px;
+    max-height: 100vh;
 }
 
 .container-slideshow {
     grid-area: 1/-1;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     max-height: 750px;
     min-height: 0;
     object-fit: cover;
+    display: inline-block;
+    overflow: hidden;
+    transform: translateX(0px);
 }
 
 .mySlides {
     display: none;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     max-height: 750px;
     z-index: -1;
+    transform: translateX(0px);
 }
 
 .mySlides img, picture {
     position: absolute;
-    top: 0px;
+    top: 25px;
     left: 0px;
-    height: 100vh;
+    /*width: 100vw;*/
+    transform: translateX(0px);
+}
+
+@media screen and (max-width: 768px) {
+    .mySlides img, picture {
+        width: 100vw;
+    }
 }
 
 .fade {
@@ -189,7 +199,6 @@ h4 {
     to {opacity: 1}
 }
 
-/*equivalent to hero__content in tutorial*/
 .responsive-logo {
     z-index: 1;
     grid-area: 1/-1;
