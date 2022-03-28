@@ -172,7 +172,6 @@ h4 {
     position: absolute;
     top: 25px;
     left: 0px;
-    /*width: 100vw;*/
     transform: translateX(0px);
 }
 
@@ -287,9 +286,7 @@ h4 {
         font-size: 12px;
         padding: 3%;
         max-width: 50%;
-    }
-
-    
+    }    
 }
 
 /* PRODUCTOS */
@@ -413,9 +410,7 @@ h4 {
         font-family: var(--open-sans);
         margin: 5px;        
     }
-   
 }
-
 
 /* INFO */
 
@@ -590,7 +585,6 @@ h4 {
     }
    
 }
-
 
 /* FOOTER */
 
